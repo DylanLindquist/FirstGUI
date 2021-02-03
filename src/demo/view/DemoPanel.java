@@ -1,11 +1,13 @@
-package view;
+package demo.view;
 
 import javax.swing.JPanel;
+
+import demo.controller.AppController;
+
 import javax.swing.JButton;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Color;
-import controller.AppController;
 
 
 public class DemoPanel extends JPanel
@@ -44,10 +46,12 @@ public class DemoPanel extends JPanel
 				if (colorPicker == 1)
 				{
 					setBackground(myColor);
+					controller.updateQuestions();
 				}
 				else
 				{
 					setBackground(generateRandomColor());
+					controller.updateQuestions();
 				}			
 			}
 		});

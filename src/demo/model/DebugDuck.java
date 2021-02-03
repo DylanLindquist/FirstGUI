@@ -1,11 +1,11 @@
-package model;
+package demo.model;
 
-public class Debugduck
+public class DebugDuck
 {
 	private int questionCount;
 	private String name;
 	
-	public Debugduck()
+	public DebugDuck()
 	{
 		this.questionCount = 0;
 		this.name = "Ted";
